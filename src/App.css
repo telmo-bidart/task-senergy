@@ -8,3 +8,7 @@ nav {
     align-items: center;
     min-height: 10vh;
 }
+.myDIV {
+  display: block;
+  background-color: brown;
+}
