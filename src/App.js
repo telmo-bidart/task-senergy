@@ -7,9 +7,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Chart from './components/Chart';
 import Chart2 from './components/Chart2';
 import Chart3 from './components/Chart3';
-import Button from './components/Button';
-import Button2 from './components/Button2';
-import Button3 from './components/Button3';
+import Variable from './Variable';
 
 function App() {
   return (
@@ -28,17 +26,16 @@ function App() {
 
 const Home = () => {
   return (
-    <div>
-      <div>
-        <h1>
-          escolha sua variável de interesse.
-        </h1>
-        <Button /> <Button2 /> <Button3 />
-      <div id="myDIV">
-      <Chart />
-      </div>
-      </div> <Chart2 /> <Chart3 />
-    </div>
+    <Router>
+      <div className="graphs">
+          <Variable />
+        <Switch>
+          <Route path="/chart" exact component={Chart} />
+          <Route path="/Chart2" exact component={Chart2} />
+          <Route path="/Chart3" exact component={Chart3} />
+        </Switch>
+        </div>
+    </Router>
   );
 }
 
