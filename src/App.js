@@ -7,6 +7,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Chart from './components/Chart';
 import Chart2 from './components/Chart2';
 import Chart3 from './components/Chart3';
+import Variable from './Variable';
 
 function App() {
   return (
@@ -25,15 +26,16 @@ function App() {
 
 const Home = () => {
   return (
-    <div>
-       <div>
-         <form>
-           <input type="radio" id="v" value="volts"></input>
-           <input type="radio" id="a" value="ampere"></input>
-           <input type="radio" id="c" value="temp"></input>
-         </form>
-         </div> <Chart /> <Chart2 /> <Chart3 />
-    </div>
+    <Router>
+      <div className="graphs">
+          <Variable />
+        <Switch>
+          <Route path="/chart" exact component={Chart} />
+          <Route path="/Chart2" exact component={Chart2} />
+          <Route path="/Chart3" exact component={Chart3} />
+        </Switch>
+        </div>
+    </Router>
   );
 }
 
