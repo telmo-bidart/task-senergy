@@ -3,7 +3,7 @@ import { LineChart, Line, ResponsiveContainer, CartesianGrid, XAxis, YAxis, Tool
 import { usinaData } from './dadosUsina';
 
 let chart = () => (
-    <ResponsiveContainer width="100%" height={550}>
+    <ResponsiveContainer width="100%" height={500}>
     <LineChart data={usinaData}
     margin={{top: 120, right:100, left: 100, bottom: 1}}>
       <CartesianGrid strokeDasharray="1 1" />

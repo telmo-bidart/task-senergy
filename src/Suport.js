@@ -2,8 +2,8 @@ import './App.css';
 
 function Suport() {
   return (
-    <div>
-        <h1>Tire suas duvidas com</h1>
+    <div className="suporte">
+        <h1>Tire suas duvidas com nosso suporte:</h1>
     </div>
   );
 }
