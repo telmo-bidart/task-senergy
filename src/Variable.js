@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 function Variable() {
   return (
-   <div>
+   <div className="variable">
        <h1>
-           Escolha sua variável de interesse.
+           Escolha sua variável de interesse:
        </h1>
            <ul>
             <Link to="/chart">

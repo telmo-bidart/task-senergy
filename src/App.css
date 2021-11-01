@@ -1,14 +1,62 @@
 .App {
   text-align: center;
 }
-nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: aqua;
-    align-items: center;
-    min-height: 10vh;
+ul {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+  margin: 20px;
 }
-.myDIV {
-  display: block;
-  background-color: brown;
+li {
+  margin: 10px;
+}
+nav {
+  display: flex;
+  background-color: #00a2a2;
+  min-height: 8vh;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo a {
+  color: lightgreen;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.logo a:visited {
+  text-decoration: none;
+}
+.logo a:hover {
+  cursor: pointer;
+}
+.variable {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: lightgreen;
+}
+.variable h1 {
+  color: #00a2a2;
+}
+.variable a {
+  color: #00a2a2;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.variable a:visited {
+  text-decoration: none;
+}
+.variable a:hover {
+  cursor: pointer;
+}
+.suporte {
+  background-color: lightgreen;
+  padding: 0;
+  margin: 0;
+}
+.suporte h1 {
+  color: #00a2a2;
+  margin: 0;
 }
